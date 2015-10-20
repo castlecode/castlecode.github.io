@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Castlerock</title>
+    <link>http://www.castlerock.se/categories/programming/</link>
+    <description>Recent content in Programming on Castlerock</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Jul 2015 12:42:24 +0200</lastBuildDate>
+    <atom:link href="http://www.castlerock.se/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>lfe</title>
+      <link>http://www.castlerock.se/page/lfe/</link>
+      <pubDate>Sat, 25 Jul 2015 12:42:24 +0200</pubDate>
+      
+      <guid>http://www.castlerock.se/page/lfe/</guid>
+      <description>
+
+&lt;p&gt;A LISP running on the BEAM, how extraordinary! This must certainly
+represent the tip of human evolution.&lt;/p&gt;
+
+&lt;p&gt;I have been following &lt;a href=&#34;http://lfe.io&#34;&gt;lfe&lt;/a&gt; at a distance almost from
+the start, but I have never actually done anything with it. Time to
+change that!&lt;/p&gt;
+
+&lt;p&gt;My starting point was to install lfe on one of my Raspberry Pi&amp;rsquo;s. I
+started out installing
+&lt;a href=&#34;http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2&#34;&gt;Arch&lt;/a&gt;. I
+then installed Erlang/OTP 18 using pacman. After this I could simply
+compile lfe from &lt;a href=&#34;https://github.com/rvirding/lfe&#34;&gt;source&lt;/a&gt;. This gives
+me the following REPL:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mjl@galadriel:~ $ lfe
+Erlang/OTP 18 [erts-7.0] [source] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+LFE Shell V7.0 (abort with ^G)
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have only just begun playing with lfe, and I intend to continue to
+add my findings and impressions to this page as I go, so please come
+back and visit!&lt;/p&gt;
+
+&lt;h5 id=&#34;left-fold-aka-foldl-aka-reduce:048fc8b676dece52fabaec864166e226&#34;&gt;left fold aka foldl aka reduce&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-lisp&#34;&gt;&amp;gt; (lists:foldl (lambda (n acc) (+ n acc)) 0 &#39;(1 2 3 4 5 6))
+21
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Castlerock</title>
+    <link>http://www.castlerock.se/</link>
+    <description>Recent content on Castlerock</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jul 2015 12:04:00 +0200</lastBuildDate>
+    <atom:link href="http://www.castlerock.se/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>wallrite</title>
+      <link>http://www.castlerock.se/project/wallrite/</link>
+      <pubDate>Mon, 27 Jul 2015 12:04:00 +0200</pubDate>
+      
+      <guid>http://www.castlerock.se/project/wallrite/</guid>
+      <description>&lt;p&gt;In April 2015 I started working on a system for large, interactive,
+distributed whiteboards together with
+&lt;a href=&#34;http://wallrite.se&#34;&gt;Wallrite Scandinavia&lt;/a&gt;. We founded a separate
+company, &lt;a href=&#34;http://wallrite.eu&#34;&gt;Wallrite Interactive&lt;/a&gt;, in which
+development is now ongoing.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>http://www.castlerock.se/quote/misc/</link>
+      <pubDate>Sun, 26 Jul 2015 21:55:00 +0200</pubDate>
+      
+      <guid>http://www.castlerock.se/quote/misc/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;There&amp;rsquo;s a weakness in the people&amp;hellip; I can feel it.
+    &amp;ndash; Elizabeth, The Americans&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rpi 2 bitcoin full node</title>
+      <link>http://www.castlerock.se/post/rpi-2-bitcoin-full-node/</link>
+      <pubDate>Sat, 25 Jul 2015 20:09:29 +0200</pubDate>
+      
+      <guid>http://www.castlerock.se/post/rpi-2-bitcoin-full-node/</guid>
+      <description>&lt;p&gt;So, I admit, I was a bit late in the game regarding Bitcoin. Or more
+than a little actually. Sure, I&amp;rsquo;ve read a bit about it, but I never
+really got into it. Until a few months ago, when I had lunch with a
+former colleague who is very much into Bitcoin. We met up for lunch at
+&lt;a href=&#34;https://epicenterstockholm.com/&#34;&gt;Epicenter&lt;/a&gt;. I had a sandwich,
+minderal water, and I tried out the first Bitcoin
+&lt;a href=&#34;http://coinatmradar.com/bitcoin_atm/434/bitcoin-atm-bitaccess-stockholm-btcx-office/&#34;&gt;ATM&lt;/a&gt;
+in Stockholm. Since then I have been spending a lot of time reading up
+on Bitcoin.&lt;/p&gt;
+
+&lt;p&gt;Now I&amp;rsquo;ve decided I must try to setup my own full Bitcoin node. It
+seems like good fun, and also the adult, responsible thing to do.&lt;/p&gt;
+
+&lt;p&gt;I wanted to go pretty minimal, while still being reasonably simple to
+setup. So I opted for a Raspberry Pi 2 with
+&lt;a href=&#34;http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2&#34;&gt;Arch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As I started out, I thought that I would be able to make the world a
+wonderful service by documenting my endeavor. Turns out I only had to
+follow the instructions for installing
+&lt;a href=&#34;http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2&#34;&gt;Arch&lt;/a&gt;,
+installing bitcoind and bitcoin-cli from packages, and then following
+the instructions at &lt;a href=&#34;https://bitcoin.org/en/full-node&#34;&gt;bitcoin.org&lt;/a&gt;
+for setting up a full node (granted, I should probably have built from
+source myself, to be on the safe side). It&amp;rsquo;s not the fastest node in
+the network, but hey, it&amp;rsquo;s cheap and simple, and thus far looks like a
+great way to get started.&lt;/p&gt;
+
+&lt;p&gt;I have not yet opened up my node for incoming traffic, as I am waiting
+for the blockchain to synchronize.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>lfe</title>
+      <link>http://www.castlerock.se/page/lfe/</link>
+      <pubDate>Sat, 25 Jul 2015 12:42:24 +0200</pubDate>
+      
+      <guid>http://www.castlerock.se/page/lfe/</guid>
+      <description>
+
+&lt;p&gt;A LISP running on the BEAM, how extraordinary! This must certainly
+represent the tip of human evolution.&lt;/p&gt;
+
+&lt;p&gt;I have been following &lt;a href=&#34;http://lfe.io&#34;&gt;lfe&lt;/a&gt; at a distance almost from
+the start, but I have never actually done anything with it. Time to
+change that!&lt;/p&gt;
+
+&lt;p&gt;My starting point was to install lfe on one of my Raspberry Pi&amp;rsquo;s. I
+started out installing
+&lt;a href=&#34;http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2&#34;&gt;Arch&lt;/a&gt;. I
+then installed Erlang/OTP 18 using pacman. After this I could simply
+compile lfe from &lt;a href=&#34;https://github.com/rvirding/lfe&#34;&gt;source&lt;/a&gt;. This gives
+me the following REPL:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mjl@galadriel:~ $ lfe
+Erlang/OTP 18 [erts-7.0] [source] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+LFE Shell V7.0 (abort with ^G)
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have only just begun playing with lfe, and I intend to continue to
+add my findings and impressions to this page as I go, so please come
+back and visit!&lt;/p&gt;
+
+&lt;h5 id=&#34;left-fold-aka-foldl-aka-reduce:048fc8b676dece52fabaec864166e226&#34;&gt;left fold aka foldl aka reduce&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-lisp&#34;&gt;&amp;gt; (lists:foldl (lambda (n acc) (+ n acc)) 0 &#39;(1 2 3 4 5 6))
+21
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://www.castlerock.se/about/</link>
+      <pubDate>Fri, 24 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.castlerock.se/about/</guid>
+      <description>
+
+&lt;p&gt;My name is &lt;a href=&#34;https://se.linkedin.com/in/liseborn&#34;&gt;Johan Liseborn&lt;/a&gt; and I
+have been working with software development since 1989, when I joined
+Ericsson in Bollmora. After a few years of developing PBXes in
+&lt;a href=&#34;https://en.wikipedia.org/wiki/PLEX_(programming_language)&#34;&gt;Plex-M&lt;/a&gt;
+I went to study computer science in
+&lt;a href=&#34;https://www.liu.se/utbildning/pabyggnad/6MICS?l=en&#34;&gt;Linköping&lt;/a&gt;. During
+that time, the internet became a thing, and since then, most of what I
+have been working on has been internet related.&lt;/p&gt;
+
+&lt;p&gt;In 1999 I co-founded Hotsip, where we built voice, video, and chat
+applications and infrastructure based on
+&lt;a href=&#34;https://www.ietf.org/rfc/rfc3261.txt&#34;&gt;SIP&lt;/a&gt;. Hotsip got acquired by
+Oracle in 2006, and I spent a few years there. After that I co-founded
+a company offering mobile based task management for small businesses,
+but that never took off. I spent a few years working in the financial
+industry, first with TriOptima, and then briefly with Klarna.&lt;/p&gt;
+
+&lt;p&gt;In 2010 I joined Glactic to work on a web based dating service
+including real-time voice and video speed dating. The system was
+pretty cool, including a real-time matching engine based on Solr, and
+a real-time voice and video exchange engine built in Erlang, but once
+again, the service never took off.&lt;/p&gt;
+
+&lt;p&gt;In late 2011 I became employee #1 and CTO at Magine TV, where I was
+part of designing and building, from the ground, a real-time
+transcoding and streaming system for live, linear TV. I left Magine at
+the beginning of 2015, to found Castlerock and work on new, exciting
+projects.&lt;/p&gt;
+
+&lt;p&gt;Through the years I have learned that I like startups, and I like to
+be part of solving new problems and creating new systems from scratch.&lt;/p&gt;
+
+&lt;p&gt;Through the years, I have been working with many different things,
+from being a junior programmer to being a manager, a CTO, a board
+member, and a chairman of the board. I have found that what I like
+most is to work in startups, with a bright team, solving new problems,
+and building systems from scratch.&lt;/p&gt;
+
+&lt;p&gt;If you think that there is something I could help out with, please do
+not hesitate to drop me a &lt;a href=&#34;mailto:hello@castlerock.se&#34;&gt;mail&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;my-history-in-computing:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;my history in computing&lt;/h5&gt;
+
+&lt;p&gt;I started out learning programming on my own in the early 80s. The
+first computer I used was a friends
+&lt;a href=&#34;https://en.wikipedia.org/wiki/ZX81&#34;&gt;ZX81&lt;/a&gt;. I then got a
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Commodore_VIC-20&#34;&gt;VIC-20&lt;/a&gt;, followed by
+a &lt;a href=&#34;https://en.wikipedia.org/wiki/Commodore_64&#34;&gt;C64&lt;/a&gt;. I started out
+programming in Basic on the ZX81 and the two Commodore machines. I
+also started learning 6502 assembler on the VIC-20.&lt;/p&gt;
+
+&lt;p&gt;In &amp;lsquo;84 or &amp;lsquo;85 I got a
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Sinclair_QL&#34;&gt;Sinclair QL&lt;/a&gt;, which was a
+really cool machine. It had a basic interpreter that was really easy,
+to extend with your own commands (in assembler), and it had a 68008
+CPU, which meant I could start playing around with 68k assembly. It
+also had a pretty neat storage system, consisting of two &amp;ldquo;microdrives&amp;rdquo;
+with infinite loop tape cartridges. The only thing that sucked was the
+graphics, so it was no-good for gaming.&lt;/p&gt;
+
+&lt;p&gt;In &amp;lsquo;86 or &amp;lsquo;87 I got an
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Atari_ST&#34;&gt;Atari 1040ST&lt;/a&gt;, and a few
+years later I had a brief stint with an
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Atari_ST#Atari_TT&#34;&gt;Atari TT&lt;/a&gt;. Sometime
+in the mid 80s, I don&amp;rsquo;t remember exactly when, I read an interview
+with Richard M. Stallman in a Swedish computer magazine. This was my
+first real exposure to free software. I found out that there was quite
+a lot of free software available for the Atari, and I started
+downloading and playing with all kinds of different free software
+packages, including Lisp and Scheme.&lt;/p&gt;
+
+&lt;p&gt;Sometime during &amp;lsquo;89 or &amp;lsquo;90 I got my first Sun workstation at work
+(this was at Ericsson; before that it had all been IBM mainframes at
+work), and I started learning Unix.&lt;/p&gt;
+
+&lt;p&gt;I got my first regular PC, a 486, sometime in the early 90s, probably
+in &amp;lsquo;92. I ran windows for a while, I tried OS/2 (it was handed out for
+free at my university and it was completely useless on that machine),
+and then switched to GNU/Linux, probably late &amp;lsquo;92 or early &amp;lsquo;93.&lt;/p&gt;
+
+&lt;p&gt;In December &amp;lsquo;99 I got hold of &lt;a href=&#34;http://openbsd.org&#34;&gt;OpenBSD&lt;/a&gt; 2.6 and
+fell in love with the OS and the approach of the project. The focus,
+the attention to detail, and the dedication to the project goals, as
+well as the somewhat brusk, no-nonse and to-the-point way of
+communication (that some people perceive as rude) are all things I
+appreciate. For a few years, I ran OpenBSD as my primary operating
+system, on a number of IBM ThinkPads.&lt;/p&gt;
+
+&lt;p&gt;Since the mid 90s I have had a whole bunch of machines, mostly
+laptops, and mostly IBM ThinkPads (and later Lenovos). I switched to
+Apple machines (I know, I know) sometime in the mid 00s, the first one
+was a 12&amp;rdquo; PowerBook. I have always been fond of small laptops,
+favoring portability rather than raw performance. This also goes well
+with my thought that most software is bloated, and that we in general
+should be able to get by with smaller, cheaper machines.&lt;/p&gt;
+
+&lt;p&gt;I have been pretty happy with OS X for many years, but I am not too
+fond of its non-freeness, and it&amp;rsquo;s increasing focus on locking the
+users in and seducing them into buying stuff, so recently I have
+started to switch over to run GNU/Linux on most of my lingering Apple
+machines. Currently, my main laptop is a mid-2012 MacBook Air running
+&lt;a href=&#34;http://www.linuxmint.com/&#34;&gt;Linux Mint 17.2 Rafaela Cinnamon Edition&lt;/a&gt;. The
+use of GNU/Linux is mostly out of laciness, and my current goal is to
+switch back to using OpenBSD as my main operating system.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

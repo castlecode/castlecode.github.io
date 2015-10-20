@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Btc on Castlerock</title>
+    <link>http://www.castlerock.se/tags/btc/</link>
+    <description>Recent content in Btc on Castlerock</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Jul 2015 20:09:29 +0200</lastBuildDate>
+    <atom:link href="http://www.castlerock.se/tags/btc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>rpi 2 bitcoin full node</title>
+      <link>http://www.castlerock.se/post/rpi-2-bitcoin-full-node/</link>
+      <pubDate>Sat, 25 Jul 2015 20:09:29 +0200</pubDate>
+      
+      <guid>http://www.castlerock.se/post/rpi-2-bitcoin-full-node/</guid>
+      <description>&lt;p&gt;So, I admit, I was a bit late in the game regarding Bitcoin. Or more
+than a little actually. Sure, I&amp;rsquo;ve read a bit about it, but I never
+really got into it. Until a few months ago, when I had lunch with a
+former colleague who is very much into Bitcoin. We met up for lunch at
+&lt;a href=&#34;https://epicenterstockholm.com/&#34;&gt;Epicenter&lt;/a&gt;. I had a sandwich,
+minderal water, and I tried out the first Bitcoin
+&lt;a href=&#34;http://coinatmradar.com/bitcoin_atm/434/bitcoin-atm-bitaccess-stockholm-btcx-office/&#34;&gt;ATM&lt;/a&gt;
+in Stockholm. Since then I have been spending a lot of time reading up
+on Bitcoin.&lt;/p&gt;
+
+&lt;p&gt;Now I&amp;rsquo;ve decided I must try to setup my own full Bitcoin node. It
+seems like good fun, and also the adult, responsible thing to do.&lt;/p&gt;
+
+&lt;p&gt;I wanted to go pretty minimal, while still being reasonably simple to
+setup. So I opted for a Raspberry Pi 2 with
+&lt;a href=&#34;http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2&#34;&gt;Arch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As I started out, I thought that I would be able to make the world a
+wonderful service by documenting my endeavor. Turns out I only had to
+follow the instructions for installing
+&lt;a href=&#34;http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2&#34;&gt;Arch&lt;/a&gt;,
+installing bitcoind and bitcoin-cli from packages, and then following
+the instructions at &lt;a href=&#34;https://bitcoin.org/en/full-node&#34;&gt;bitcoin.org&lt;/a&gt;
+for setting up a full node (granted, I should probably have built from
+source myself, to be on the safe side). It&amp;rsquo;s not the fastest node in
+the network, but hey, it&amp;rsquo;s cheap and simple, and thus far looks like a
+great way to get started.&lt;/p&gt;
+
+&lt;p&gt;I have not yet opened up my node for incoming traffic, as I am waiting
+for the blockchain to synchronize.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

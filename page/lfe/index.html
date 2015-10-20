@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>lfe</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  
+  <link rel="icon" type="image/png" href="/images/logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <a href="/"><img src="/images/castlerock-160x66.png" alt="Castlerock" /></a>
+        </div>
+
+<div class="container">
+    <div class="row">
+        <h3>lfe</h3>
+        
+
+<p>A LISP running on the BEAM, how extraordinary! This must certainly
+represent the tip of human evolution.</p>
+
+<p>I have been following <a href="http://lfe.io">lfe</a> at a distance almost from
+the start, but I have never actually done anything with it. Time to
+change that!</p>
+
+<p>My starting point was to install lfe on one of my Raspberry Pi&rsquo;s. I
+started out installing
+<a href="http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2">Arch</a>. I
+then installed Erlang/OTP 18 using pacman. After this I could simply
+compile lfe from <a href="https://github.com/rvirding/lfe">source</a>. This gives
+me the following REPL:</p>
+
+<pre><code class="language-sh">mjl@galadriel:~ $ lfe
+Erlang/OTP 18 [erts-7.0] [source] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+LFE Shell V7.0 (abort with ^G)
+&gt;
+</code></pre>
+
+<p>I have only just begun playing with lfe, and I intend to continue to
+add my findings and impressions to this page as I go, so please come
+back and visit!</p>
+
+<h5 id="left-fold-aka-foldl-aka-reduce:048fc8b676dece52fabaec864166e226">left fold aka foldl aka reduce</h5>
+
+<pre><code class="language-lisp">&gt; (lists:foldl (lambda (n acc) (+ n acc)) 0 '(1 2 3 4 5 6))
+21
+</code></pre>
+
+    </div>
+</div>
+<div class="row">
+    <center>
+        <p><a href="mailto:hello@castlerock.se">contact</a> | &copy; 2015 castlerock ab</p>
+    </center>
+</div>
+</div> 
+</body>
+</html>
+
